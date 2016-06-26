@@ -1,0 +1,71 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/uber_img"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/carType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/uber_img"
+        android:text="UberGo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pickupTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/carType"
+        android:paddingTop="2dp"
+        android:text="in 10 min"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/surge_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/carType"
+        android:src="@drawable/surge" />
+
+    <TextView
+        android:id="@+id/surge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carType"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/surge_icon"
+        android:text="1.5"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/estimatedPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carType"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/surge"
+        android:text="110-120"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/perkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carType"
+        android:layout_toRightOf="@id/estimatedPrice"
+        android:text="( 8/km )"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
